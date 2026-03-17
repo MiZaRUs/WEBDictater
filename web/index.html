@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dictater</title>
+    <link href="pub/app.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+    	    <canvas class="visualizer" height="60px"></canvas>
+        </header>
+
+        <section class="main-controls">
+            <div id="buttons">
+                <button class="record" isPlaying="off">Микрофон</button>
+                <button class="saved">Сохранить</button>
+            </div>
+        </section>
+
+        <section id="editor" contenteditable="true"
+	    style="height: 85%; width: 100%; border: solid; border-width: 1px; text-align: left">
+	</section>
+
+
+
+
+        <section id="statusWrapper">
+    	    <p align="center">Powered by Whisper.CPP by Oleg Shirokov</p> 
+    	</section>
+
+    </div>
+    <script src="pub/app.js"></script>
+</body></html>
